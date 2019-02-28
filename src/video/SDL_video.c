@@ -501,7 +501,9 @@ SDL_VideoInit(const char *driver_name)
         }
     } else {
         for (i = 0; bootstrap[i]; ++i) {
+            printf("bruce >>> %s bootstrap[%d]->desc:%s \n", __func__, i, bootstrap[i]->desc);
             if (bootstrap[i]->available()) {
+                printf("bruce >>> %s bootstrap[%d]->available() is available\n", __func__, i);
                 video = bootstrap[i]->create(index);
                 if (video != NULL) {
                     break;
