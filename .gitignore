@@ -1,1 +1,16 @@
+
+# 工程目录
 /sdl2.0.9.si4project
+
+# 执行./configure 所生成的文件
+Makefile
+Makefile.rules
+/build
+config.log
+config.status
+libtool
+sdl2-config
+sdl2-config.cmake
+sdl2.pc
+
+
